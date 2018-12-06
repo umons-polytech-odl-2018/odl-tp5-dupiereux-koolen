@@ -1,6 +1,7 @@
 package exercise1;
 
 import org.junit.Test;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -64,6 +65,8 @@ public class StudentTest {
     public void averageScore_with_many_courses() {
         Student daenarysTargaryen = new Student("Daenarys Targaryen", "028743");
         daenarysTargaryen.setScore("leadership", 18);
+        daenarysTargaryen.setScore("test",15);
+        assertThat(daenarysTargaryen.averageScore()).isEqualTo(16.5);
 
     }
 

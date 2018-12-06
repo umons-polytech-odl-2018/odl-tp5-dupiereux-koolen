@@ -9,11 +9,13 @@ public class DuplicateStudentException extends RuntimeException {
     /**
      * @param registrationNumber the registration number that is duplicated.
      */
-    public DuplicateStudentException(String registrationNumber) {
+    public DuplicateStudentException(String registrationNumber)
+    {
         this.registrationNumber = registrationNumber;
     }
 
-    public String getRegistrationNumber() {
+    public String getRegistrationNumber()
+    {
         return registrationNumber;
     }
 }
